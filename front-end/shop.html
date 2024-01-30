@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Granite</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type= "text/css" href="shop.css">
+</head>
+<body>
+    <section id="header">
+        <h2>Paxal Marbels & Titles</h2>
+        
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="shop.html">HOME</a></li>
+                <li><a  href="product.html">PRODUCTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contactus.html"><i class="material-icons">call</i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="material-icons">favorite</i></a></li>
+                <li><a href="login.html"><i class="material-icons">account_circle</i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="material-icons">add_shopping_cart</i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+  
+    <section id="second">
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 10</div>
+              <img src="images/fb1.jpg" style="width:100%">
+              
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 10</div>
+              <img src="images/fb6.jpg" style="width:100%">
+              
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 10</div>
+              <img src="images/fb4.jpg" style="width:100%">
+              
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 10</div>
+                <img src="images/fb7.jpg" style="width:100%">
+                
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+          <script>
+            let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 3000); // Change image every 2 seconds
+                    }
+            </script>
+
+  </section>
+  
+  <section id="about">
+    <div class="details">
+        <div class="one">
+            <h3>ABOUT US</h3>
+            <h6>What Makes Us The Best Marble and Granite Suppliers? </h6>
+            <p><b>With years of excellence in the field of Natural Stone Industry. We are known as the prominent marble and granite suppliers in India and all over the world
+                Paxal Marbles and Granite Ltd has emerged as the leading processor and exporter of natural stones. </b></p>	
+        </div>
+        <div class="two">
+            <p><b> We are an innovative company, established in 1989 to yield unmatched quality and unique design marbles and granites. The company operates its 
+                Granite Division from South India(Salem, Tamil Nadu), known for its rich reserves for metamorphosed granite.</b></p>
+            <h5>Looking for stones online?</h5>
+            <br>
+            <p><b> In conformity with its commitment to excellence, the company has installed the most sophisticated and environment-friendly granite processing machinery imported from Italy. If you are looking for the finest collection of natural stone, 
+                Paxal Marble & Granite Ltd serves as the clear leader for exporting naturally beautiful stone surfaces.</b></p>
+        </div>
+    </div>
+  </section>
+  <section id="product1" class="section-p1">
+      <h2>Our Range of Products</h2>
+      </div>
+  </section>
+  
+  <section id="sm-banner" class="section-p1">
+    <div class="class">
+    <div class="classMenu">
+			
+        <div class="team1">
+            <div class="img">
+                <img src="images/f4.jpg">
+            </div>
+            <div class="teamDetails">
+                <div class="name">
+                    <div class="nameDetails">
+                        <h4>Ocean Blue Granite</h4>
+                        <p><span></span></p>
+                    </div>
+                    <div clas="num">
+                        <h5>INR 4500</h5>
+                    </div>						            
+                </div>
+                <div class="pro">
+                    <p>INR 4500</p>
+                </div>
+            </div>
+        
+        </div>
+        <div class="team1">
+            <div class="img">
+                <img src="images/f14.jpg">
+            </div>
+            <div class="teamDetails">
+                <div class="name">
+                    <div class="nameDetails">
+                        <h4>Black Granite</h4>
+                        <p><span></span></p>
+                    </div>
+                    <div clas="num">
+                        <h5>INR 4500</h5>
+                    </div>						            
+                </div>
+                <div class="pro">
+                    <p>INR 5000</p>
+                </div>
+            </div>
+        </div>
+        <div class="team1">
+            <div class="img">
+                <img src="images/f1.jpg">
+            </div>
+            <div class="teamDetails">
+                <div class="name">
+                    <div class="nameDetails">
+                        <h4>Red Marble</h4>
+                        <p><span></span></p>
+                    </div>
+                    <div clas="num">
+                        <h5>INR 4500</h5>
+                    </div>						            
+                </div>
+                <div class="pro">
+                    <p>INR 4000</p>
+                </div>
+            </div>
+        </div>
+        <div class="team1">
+            <div class="img">
+                <img src="images/f10.jpg">
+            </div>
+            <div class="teamDetails">
+                <div class="name">
+                    <div class="nameDetails">
+                        <h4>Bianco Granite</h4>
+                        <p><span></span></p>
+                    </div>
+                    <div clas="num">
+                        <h5>INR 4500</h5>
+                    </div>						            
+                </div>
+                <div class="pro">
+                    <p>INR 6000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div></section>  
+ <section>
+    <section class="cta">
+        <h1>TO GET TO KNOW MORE ABOUT OUR<br>MARBLES AND TILES</h1>
+        <a href="contact.html" class="hero-btn" >LOGIN</a>
+        
+        .
+    </section>
+ </section> 
+    
+  <section id="newsletter" class="section-p1">
+      <div class="newtext">
+          <h4>Sign Up for Newsletter</h4>
+          <p>Get E-mail updates about our <span>special offers.</span></p>
+      </div>
+      <div class="form">
+          <input type="text" placeholder="Your E-mail address">
+          <button class="normal">Sign Up</button>
+      </div>
+  </section>
+
+  <footer class="section-p1">
+      <div class="col">
+          <img class="logo" src="images/logo.png" alt="">
+          <h2>Paxal Marbels & Titles</h2>
+          <h4>Contact</h4>
+          <p><strong>Address: </strong>Hosur main road</p>
+          <p><strong>Phone: </strong>123456789</p>
+          <p><strong>Timings</strong>10:00am - 7:00pm, Mon - Sat</p>
+      <div class="follow">
+          <h4>Follow</h4>
+          <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter-f"></i>
+              <i class="fab fa-instagram-f"></i>
+          </div>
+      </div>
+      </div>
+
+<div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Contact us</a>
+</div>
+<div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">Help</a>
+</div>
+
+<div class="copyright">
+    <p>2022, paxal marbles and titles PVT LTD</p>
+</div>
+  </footer>
+    
+  
+ <script src="script.js">
+    var counter=1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    },5000);
+</script>
+
+
+
+
+   </body>
+   </html>

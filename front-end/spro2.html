@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Granite</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type= "text/css" href="shop.css">
+
+</head>
+<body>
+    <section id="header">
+        <h2>Paxal Marbels & Titles</h2>
+        
+        <div>
+            <ul id="navbar">
+                <li><a href="shop.html">HOME</a></li>
+                <li><a class="active" href="product.html">PRODUCTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contactus.html"><i class="material-icons">call</i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="material-icons">favorite</i></a></li>
+                <li><a href="login.html"><i class="material-icons">account_circle</i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="images/s22.jpg" width="100%" id="MainImg" alt="">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="images/s22.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/s22.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/s22.jpg" width="100%" class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/f4.jpg" width="100%" class="small-img" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h4>BRECCIA FURY</h4>
+            <h4>SELECT THE THICKNESS</h4>
+            <select id="item1" >
+                <OPTION VALUE="0" style="width: 500px;">  Select the thickness   .</OPTION>
+                <OPTION VALUE="1"> 10-20mm  200/sqft  </OPTION>
+                <OPTION VALUE="2"> 20-30mm  300/sqft  </OPTION>
+                <OPTION VALUE="3"> 30-40mm  400/sqft  </OPTION>
+                <OPTION VALUE="4"> 40-50mm  500/sqft  </OPTION>
+            </select>
+               
+            <SCRIPT>
+               function message() {
+                var n1=parseInt(document.getElementById('n1').value);
+                var opt=document.getElementById('item1').value;
+                if (opt === '1') {
+                   alert("selected is 10-20mm  200/sqft");
+                   document.getElementById('result').value=n1*200;
+                }
+                if (opt === '2') {
+                   alert("selected is 20-30mm  300/sqft");
+                   document.getElementById('result').value=n1*300;
+                }
+                if (opt === '3') {
+                   alert("selected is 30-40mm  400/sqft");
+                   document.getElementById('result').value=n1*400;
+                }
+                if (opt === '4') {
+                   alert("selected is 40-50mm  500/sqft");
+                   document.getElementById('result').value=n1*500;
+                }
+               }
+        
+            </SCRIPT> 
+
+
+            <section>
+                <h4>ENTER THE SQAUREFEET REQIURED</h4>
+                
+                <input type="text" id="n1" maxlength="1000" style="width: 200px;">
+                    <button class="btn btn1" onclick="message();">calculate the price</button><br><br>
+                    <span>GRAND TOTAL : </span>
+                    <input type="text" id="result" style="width: 200px;">
+                    <h4>Product Details</h4>
+                    <span>Mined from the Southern part of the country, 
+                        Amba White is a versatile granite stone that has brown speckles and grey veins splattered all over the white-coloured background stone. Its elegant look along with its high powering characteristics like durability and resistance to wear is what makes it a perfect choice for commercial and residential projects. Amba white granite stone can be 
+                        integrated into interior and exterior spaces like flooring, 
+                        countertops, wall claddings, vanity tops, basins, stairs and more. Paxal Marbles and granites 
+                        ltd is a leading exporter and supplier of natural stones in the market and provides you with a wide range of natural stones. Our stones are available in tiles, blocks, slabs and can be customized into dimensions 
+                        according to the customer’s requirements..</span>
+                       <br>
+                       <br>
+                    <div class="container1">
+                        <button type="submit" class="btn btn1" onclick="oopen()">check the avaibilty</button>
+                        <div class="popup" id="popup">
+                            <img src="images/404-tick.png">
+                            <h2>THANK YOU</h2>
+                            <p>JGDIULHFVUTTIVUGHSVL<br>dkfjnhsjkfdgvk</p>
+                            <button type="button" onclick="copen()">OK</button>
+                        </div>
+                    </div>
+                
+                
+                    <script>
+                        let popup=document.getElementById("popup");
+                        function oopen(){
+                            popup.classList.add("open-popup")
+                        }
+                        function copen(){
+                            popup.classList.remove("open-popup")
+                        }
+                    </script>
+            </section>
+                  
+  
+
+        </div>
+        </section>
+   
+      
+
+
+
+    
+ 
+
+    <section id="newsletter" class="section-p1">
+        <div class="newtext">
+            <h4>Sign Up for Newsletter</h4>
+            <p>Get E-mail updates about our <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your E-mail address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+  
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h2>Paxal Marbels & Titles</h2>
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Hosur main road</p>
+            <p><strong>Phone: </strong>123456789</p>
+            <p><strong>Timings</strong>10:00am - 7:00pm, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter-f"></i>
+                <i class="fab fa-instagram-f"></i>
+            </div>
+        </div>
+        </div>
+  
+  <div class="col">
+      <h4>About</h4>
+      <a href="#">About us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Contact us</a>
+  </div>
+  <div class="col">
+      <h4>My Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">Help</a>
+  </div>
+ 
+  <div class="copyright">
+      <p>2022, paxal marbles and titles PVT LTD</p>
+  </div>
+    </footer>
+    
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+      
+    
+  <script src="script.js"></script>
+  
+  
+  
+</body>
+</html>

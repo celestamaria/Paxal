@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Granite</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type= "text/css" href="shop.css">
+    <link rel="stylesheet" type= "text/css" href="sd.css">
+
+</head>
+<body>
+    <section id="header">
+        <h2>Paxal Marbels & Titles</h2>
+        
+        <div>
+            <ul id="navbar">
+                <li><a  href="shop.html">HOME</a></li>
+                <li><a  href="product.html">PRODUCTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a class="active" href="contactus.html"><i class="material-icons">call</i></a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="material-icons">favorite</i></a></li>
+                <li><a href="login.html"><i class="material-icons">account_circle</i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="material-icons">add_shopping_cart</i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <!-----CONTACT USt-->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8960.338886931588!2d77.57581394239334!3d12.999819081183432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1630c8294f05%3A0xa78f3710bfb8918a!2sVyalikaval%20Police%20Station!5e0!3m2!1sen!2sin!4v1635992113688!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <form action="https://formspree.io/f/xrgjvpzk" method= "POST" id="my-form"> 
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>  near yvalikaval polistation ,call me once reached</h5>
+                        <p>  banglore karnatraka INDIA</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-mobile"></i>
+                    <span>
+                        <h5>+91 9353662551</h5>
+                        <p>Monday to Saturday ,12pm -5pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>Dinoanimo948@gmail.com</h5>
+                        <p>Email us your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="ENTER YOUR NAME"required>
+                    <input type="email" name="email" placeholder="ENTER YOUR EMAIL ADDRESS"required>
+                    <input type="text" name="subject"placeholder="ENTER YOUR SUBJECT"required>
+                    <textarea rows="8" name="message"placeholder="MESSAGE"required></textarea>
+                    <button type="SUBMIT"class="hero-btn red-btn">SUBMIT</button>
+                    
+                    
+                </form>
+            </div>
+        </div>
+        <div id="status" class="SUCCESS!">Success</div>
+    </section>
+  
+    
+    
+  <section id="newsletter" class="section-p1">
+      <div class="newtext">
+          <h4>Sign Up for Newsletter</h4>
+          <p>Get E-mail updates about our <span>special offers.</span></p>
+      </div>
+      <div class="form">
+          <input type="text" placeholder="Your E-mail address">
+          <button class="normal">Sign Up</button>
+      </div>
+  </section>
+
+  <footer class="section-p1">
+      <div class="col">
+          <img class="logo" src="images/logo.png" alt="">
+          <h2>Paxal Marbels & Titles</h2>
+          <h4>Contact</h4>
+          <p><strong>Address: </strong>Hosur main road</p>
+          <p><strong>Phone: </strong>123456789</p>
+          <p><strong>Timings</strong>10:00am - 7:00pm, Mon - Sat</p>
+      <div class="follow">
+          <h4>Follow</h4>
+          <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter-f"></i>
+              <i class="fab fa-instagram-f"></i>
+          </div>
+      </div>
+      </div>
+
+<div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Conditions</a>
+    <a href="#">Contact us</a>
+</div>
+<div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">Help</a>
+</div>
+
+<div class="copyright">
+    <p>2022, paxal marbles and titles PVT LTD</p>
+</div>
+  </footer>
+    
+  
+ <script src="script.js">
+    var counter=1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+            counter = 1;
+        }
+    },5000);
+</script>
+
+
+
+
+   </body>
+   </html>
